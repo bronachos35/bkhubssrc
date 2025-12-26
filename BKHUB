@@ -1040,8 +1040,8 @@ local function createDesyncIndicator()
         Size = UDim2.new(0, 35, 0, 35),
         Position = UDim2.new(0, 12, 0.5, -17.5),
         BackgroundTransparency = 1,
-        Text = "BK's",
-        TextColor3 = Color3.fromRGB(220, 120, 255),
+        Text = "Banana's",
+        TextColor3 = Color3.fromRGB(220, 255, 255),
         TextSize = 22,
         Font = Enum.Font.GothamBold,
         Parent = indicator,
@@ -1249,7 +1249,7 @@ local function refreshAllESP()
                     highlight.Adornee = model
                     highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
                     highlight.FillTransparency = 0.7
-                    highlight.FillColor = Color3.fromRGB(220, 120, 255)
+                    highlight.FillColor = Color3.fromRGB(255, 255, 0)
                     highlight.OutlineTransparency = 0.5
                     highlight.OutlineColor = Color3.fromRGB(255, 180, 255)
                     highlight.Parent = screenGui
@@ -1267,7 +1267,7 @@ local function refreshAllESP()
                     -- Background frame with gradient
                     local bgFrame = Instance.new("Frame")
                     bgFrame.Size = UDim2.new(1, 0, 1, 0)
-                    bgFrame.BackgroundColor3 = Color3.fromRGB(100, 50, 150)
+                    bgFrame.BackgroundColor3 = Color3.fromRGB(184, 134, 11)
                     bgFrame.BackgroundTransparency = 0.8
                     bgFrame.BorderSizePixel = 0
                     bgFrame.Parent = bb
@@ -1275,9 +1275,9 @@ local function refreshAllESP()
                     -- Gradient overlay
                     local gradient = Instance.new("UIGradient")
                     gradient.Color = ColorSequence.new({
-                        ColorSequenceKeypoint.new(0, Color3.fromRGB(150, 80, 200)),
-                        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(100, 180, 255)),
-                        ColorSequenceKeypoint.new(1, Color3.fromRGB(80, 200, 150))
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(184, 134, 11)),
+                        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(220, 180, 60)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 245, 180))
                     })
                     gradient.Rotation = 45
                     gradient.Parent = bgFrame
@@ -5092,7 +5092,7 @@ local function createActionsTab(parent)
         Size = UDim2.new(1, 0, 1, 0),
         BackgroundTransparency = 1,
         ScrollBarThickness = 6,
-        ScrollBarImageColor3 = COLORS.Purple,
+        ScrollBarImageColor3 = COLORS.Yellow,
         BorderSizePixel = 0,
         CanvasSize = UDim2.new(0, 0, 0, 0), -- Will be updated dynamically
         AutomaticCanvasSize = Enum.AutomaticSize.Y, -- This fixes the scrolling issue
@@ -5128,7 +5128,7 @@ local function createActionsTab(parent)
             Size = UDim2.new(1, 0, 1, 0),
             BackgroundTransparency = 1,
             Text = text,
-            TextColor3 = COLORS.Purple,
+            TextColor3 = COLORS.Yellow,
             TextSize = 18,
             Font = Enum.Font.GothamBold,
             TextXAlignment = Enum.TextXAlignment.Left,
@@ -5451,10 +5451,10 @@ local function createGui()
     title.Size = UDim2.new(1, 0, 0, 22)
     title.Position = UDim2.new(0, isMobile and 15 or (isTablet and 20 or 95), 0, 5)
     title.BackgroundTransparency = 1
-    title.Text = "BK's Hub | v2.5 ;)"
+    title.Text = "Banana's Hub | v2.5 ;)"
     title.Font = Enum.Font.GothamBold
     title.TextSize = titleSize
-    title.TextColor3 = COLORS.Purple
+    title.TextColor3 = COLORS.Yellow
     title.TextXAlignment = Enum.TextXAlignment.Left
     title.TextScaled = isMobile
     title.ZIndex = 999999999999999
@@ -5468,10 +5468,9 @@ local function createGui()
     sub.Size = UDim2.new(1, 0, 0, 18)
     sub.Position = UDim2.new(0, 15, 0, isMobile and 28 or (isTablet and 29 or 30))
     sub.BackgroundTransparency = 1
-    sub.Text = "@bkmd_ytt | discord.gg/bkshub"
-    sub.Font = Enum.Font.Gotham
+    sub.Text = "@bromachotacho | https://discord.gg/bW5vfeRR"
     sub.TextSize = subSize
-    sub.TextColor3 = COLORS.Pink
+    sub.TextColor3 = COLORS.Yellow
     sub.TextXAlignment = Enum.TextXAlignment.Left
     sub.TextScaled = isMobile
     sub.ZIndex = 999999999999999
